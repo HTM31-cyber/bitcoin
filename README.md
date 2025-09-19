@@ -1,4 +1,4 @@
-Bitcoin Core integration/staging tree
+https://github.com/balancer/balancer-v3-monorepo/blob/main/logo.svgBitcoin Core integration/staging tree
 =====================================
 
 https://bitcoincore.org
