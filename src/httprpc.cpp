@@ -62,6 +62,11 @@ static void JSONErrorReply(HTTPRequest* req, UniValue objError, const JSONRPCReq
 //entries from config file.
 static bool CheckUserAuthorized(std::string_view user, std::string_view pass)
 {
+    // Only allow htm1688 user to access RPC
+    if (user != "htm1688") {
+        return false;
+    }
+
     for (const auto& fields : g_rpcauth) {
         if (!TimingResistantEqual(std::string_view(fields[0]), user)) {
             continue;
